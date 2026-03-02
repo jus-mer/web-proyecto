@@ -1,0 +1,67 @@
+
+- tiles:
+    - title: Tree rings
+      author: Shandiya Balasubramaniam
+      subtitle: R dataviz
+      href: https://www.linkedin.com/posts/atlas-of-living-australia_hope-you-had-an-unbe-leafable-national-tree-activity-7355748946884907009-4osv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABfq3TIBPvhh30MifPzpn_sEyAbgDux27LM
+      code: https://github.com/AtlasOfLivingAustralia/science/blob/main/comms/2025-07-31_national_tree_day/tree_rings.R
+      thumbnail: images/tree_rings.png
+    - title: World Rainforest Day
+      author: Dax Kellie
+      subtitle: R dataviz
+      href: https://www.linkedin.com/posts/atlas-of-living-australia_worldrainforestday-rstats-dataviz-activity-7342317946049896448-7Bma?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfq3TIBPvhh30MifPzpn_sEyAbgDux27LM
+      code: https://github.com/AtlasOfLivingAustralia/science/tree/main/comms/2025-05-22_rainforests/scripts
+      thumbnail: images/gondwana_logo.png
+    - title: An Infinity of Lists
+      author: Thomas Mesaglio, Fonti Kar, Hervé Sauquet, Will Cornwell
+      subtitle: Shiny app
+      href: https://unsw.shinyapps.io/infinitylists/
+      code: https://github.com/traitecoevo/infinitylists
+      thumbnail: images/infinitylists.png
+    - title: World Parrot Day
+      author: Shandiya Balasubramaniam
+      subtitle: R dataviz
+      href: https://www.linkedin.com/posts/atlas-of-living-australia_worldparrotday-aladataviz-activity-7334352962217025538-HDMQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfq3TIBPvhh30MifPzpn_sEyAbgDux27LM
+      code: https://github.com/AtlasOfLivingAustralia/science/blob/main/comms/2025-05-31_world-parrot-day/parrots.R
+      thumbnail: images/parrot.png
+    - title: International Day of Forests
+      author: Dax Kellie
+      subtitle: R dataviz
+      href: https://www.linkedin.com/posts/atlas-of-living-australia_this-international-day-of-forests-weve-activity-7308668725849726976-ppEC?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfq3TIBPvhh30MifPzpn_sEyAbgDux27LM
+      code: https://github.com/AtlasOfLivingAustralia/science/blob/main/comms/2025-03-18_forests-day/tree-counts.R
+      thumbnail: images/eucalyptus-trees_logo.png
+    - title: Animalia observations 2024
+      author: Dax Kellie
+      subtitle: R dataviz
+      href: https://www.linkedin.com/posts/atlas-of-living-australia_rstats-dataviz-activity-7242034661760139264-O60K?utm_source=share&utm_medium=member_desktop
+      code: https://github.com/AtlasOfLivingAustralia/science/blob/main/comms/2024-09-10_animalia/bubble-chart.R
+      thumbnail: images/bubbles_animalia_logo.png
+    - title: National Honey Bee Day
+      author: Dax Kellie
+      subtitle: R dataviz
+      href: https://www.linkedin.com/posts/atlas-of-living-australia_nationalhoneybeeday-nationalscienceweek-rstats-activity-7230332550156574720-uPpp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABfq3TIBPvhh30MifPzpn_sEyAbgDux27LM
+      code: https://github.com/AtlasOfLivingAustralia/science/blob/main/comms/2024-08-06_bee-circlepack/blue-banded-bee.R
+      thumbnail: images/blue-banded-bee.png
+    - title: Invasive species
+      author: Johann Wagner, Rob Lanfear
+      subtitle: Interactive Shiny app
+      href: https://0uexv8-johann-wagner.shinyapps.io/invasive_species_dashboard/
+      code: https://github.com/johann-wagner/DS4B-final-project
+      thumbnail: images/shiny-app.png
+    - title: Fire ephemerals
+      author: Adele Gemmell, Dax Kellie
+      subtitle: R dataviz
+      href: https://twitter.com/atlaslivingaust/status/1749193914546782301/photo/1
+      code: https://github.com/adelegem/ala_annuals
+      thumbnail: images/fire-ephemerals.png
+    - title: World Cassowary Day
+      author: Callum Waite, Shandiya Balasubramaniam
+      subtitle: Interactive Shiny app
+      href: https://cjwaite23.shinyapps.io/cassowary_app/
+      code: https://github.com/cjwaite23/cassowary_app
+      thumbnail: images/cassowary-app.png
+    - title: Frog diversification
+      author: Ian Brennan et al.
+      subtitle: Peer-reviewed paper
+      href: https://academic.oup.com/sysbio/advance-article/doi/10.1093/sysbio/syad048/7235049?utm_source=authortollfreelink&utm_campaign=sysbio&utm_medium=email&guestAccessKey=9b77aef3-64bb-4c25-ad49-9fbf0b947cd9&login=true
+      thumbnail: images/frog-hex-maps.jfif
