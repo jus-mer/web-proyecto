@@ -1,51 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://labs.ala.org.au/index.html</loc>
-    <lastmod>2026-03-13T03:33:08.055Z</lastmod>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/index.html</loc>
+    <lastmod>2026-03-13T14:43:14.946Z</lastmod>
   </url>
   <url>
-    <loc>https://labs.ala.org.au/software/index.html</loc>
-    <lastmod>2026-03-02T19:13:27.877Z</lastmod>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/posts/2026/2026-03-13_paper-frontiers/index.html</loc>
+    <lastmod>2026-03-13T14:39:07.989Z</lastmod>
   </url>
   <url>
-    <loc>https://labs.ala.org.au/research/citations/index.html</loc>
-    <lastmod>2026-03-02T19:13:27.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://labs.ala.org.au/about/index.html</loc>
-    <lastmod>2026-03-02T19:13:27.265Z</lastmod>
-  </url>
-  <url>
-    <loc>https://labs.ala.org.au/about/Westgate_Martin/index.html</loc>
-    <lastmod>2026-03-02T19:13:27.265Z</lastmod>
-  </url>
-  <url>
-    <loc>https://labs.ala.org.au/posts/index.html</loc>
-    <lastmod>2026-03-02T19:13:27.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://labs.ala.org.au/research/highlights/index.html</loc>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/research/highlights/index.html</loc>
     <lastmod>2026-03-02T19:13:27.872Z</lastmod>
   </url>
   <url>
-    <loc>https://labs.ala.org.au/books/index.html</loc>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/posts/index.html</loc>
+    <lastmod>2026-03-13T14:42:27.548Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/books/index.html</loc>
     <lastmod>2026-03-02T19:13:27.272Z</lastmod>
   </url>
   <url>
-    <loc>https://labs.ala.org.au/gallery/index.html</loc>
-    <lastmod>2026-03-02T19:13:27.305Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/index.html</loc>
-    <lastmod>2026-03-13T14:34:06.515Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/about/index.html</loc>
-    <lastmod>2026-03-13T04:59:49.971Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/about/urzua_tomas/index.html</loc>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/about/laffert_andreas/index.html</loc>
     <lastmod>2026-03-02T19:13:27.265Z</lastmod>
   </url>
   <url>
@@ -57,23 +33,23 @@
     <lastmod>2026-03-02T19:13:27.265Z</lastmod>
   </url>
   <url>
-    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/about/laffert_andreas/index.html</loc>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/about/index.html</loc>
+    <lastmod>2026-03-13T04:59:49.971Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/about/urzua_tomas/index.html</loc>
     <lastmod>2026-03-02T19:13:27.265Z</lastmod>
   </url>
   <url>
-    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/posts/index.html</loc>
-    <lastmod>2026-03-13T13:42:54.488Z</lastmod>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/gallery/index.html</loc>
+    <lastmod>2026-03-02T19:13:27.305Z</lastmod>
   </url>
   <url>
-    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/posts/2026-03-13_paper-frontiers/index.html</loc>
-    <lastmod>2026-03-13T05:06:51.267Z</lastmod>
+    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/research/citations/index.html</loc>
+    <lastmod>2026-03-02T19:13:27.817Z</lastmod>
   </url>
   <url>
     <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/software/index.html</loc>
     <lastmod>2026-03-13T13:17:30.740Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tomasurzuam.github.io/web-proyecto/docs/index.html/posts/2026/2026-03-13_paper-frontiers/index.html</loc>
-    <lastmod>2026-03-13T13:54:04.424Z</lastmod>
   </url>
 </urlset>

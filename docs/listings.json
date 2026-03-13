@@ -1,12 +1,12 @@
 [
   {
-    "listing": "/gallery/index.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/2026/2026-03-13_paper-frontiers/index.html"
     ]
+  },
+  {
+    "listing": "/gallery/index.html",
+    "items": []
   }
 ]

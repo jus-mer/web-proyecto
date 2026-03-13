@@ -82,7 +82,7 @@ Descripción del proyecto...
 :::{.column-screen-inset}
 
 
-<center> <h1 class="heading-home" style="color: #fff;">Posts</h1>
+<center> <h1 class="heading-home" style="color: #fff;">Publicaciones</h1>
 <span style = "color: #fff; font-style: italic">Últimas actualizaciones</span> 
 </center>
 

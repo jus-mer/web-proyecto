@@ -81,12 +81,12 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../custom_theme.scss">
 <meta property="og:title" content="Books – JUSMER">
 <meta property="og:description" content="Long-form resources by the Science &amp; Decision Support Team">
-<meta property="og:image" content="https://labs.ala.org.au/books/twitter-card-preview_frog-small.png">
+<meta property="og:image" content="https://tomasurzuam.github.io/web-proyecto/docs/index.html/books/twitter-card-preview_frog-small.png">
 <meta property="og:site_name" content="JUSMER">
 <meta property="og:image:alt" content="A Southern Brown Tree Frog with the ALA Labs logo">
 <meta name="twitter:title" content="Books – JUSMER">
 <meta name="twitter:description" content="Long-form resources by the Science &amp; Decision Support Team">
-<meta name="twitter:image" content="https://labs.ala.org.au/books/twitter-card-preview_frog-small.png">
+<meta name="twitter:image" content="https://tomasurzuam.github.io/web-proyecto/docs/index.html/books/twitter-card-preview_frog-small.png">
 <meta name="twitter:image:alt" content="A Southern Brown Tree Frog with the ALA Labs logo">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -113,9 +113,13 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> <i class="bi bi-house-door-fill" role="img">
+    <a class="nav-link" href="../index.html"> <i class="bi bi-house-fill" role="img">
 </i> 
 <span class="menu-text"> </span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../software/index.html"> 
+<span class="menu-text">Proyecto</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../about/index.html"> 
@@ -126,35 +130,23 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-citaciones" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Citaciones</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-citaciones">    
         <li>
     <a class="dropdown-item" href="../research/citations/index.html">
  <span class="dropdown-text">All citations</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../software/index.html"> 
-<span class="menu-text">Software</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../books/index.html" aria-current="page"> 
-<span class="menu-text">Books</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../gallery/index.html"> 
-<span class="menu-text">Gallery</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.ala.org.au"> <i class="bi bi-ala" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/AtlasOfLivingAustralia/ala-labs"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/tomasurzuam/web-proyecto"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -590,7 +582,7 @@ body .page-columns{
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/labs\.ala\.org\.au\/");
+        var filterRegex = new RegExp("https:\/\/tomasurzuam\.github\.io\/web-proyecto\/docs\/index\.html");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
