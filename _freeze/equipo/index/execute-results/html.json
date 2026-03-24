@@ -1,0 +1,15 @@
+{
+  "hash": "3491c830371d5c029d952c0d7f920298",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Integrantes\"\nsubtitle: Roles y afiliaciones de los miembros de JUSMER\nformat: \n  html: \n    include-after-body: _footer.html\ntitle-block-banner: \"#212525\"\ntitle-block-banner-color: body\n---\n\n\n\n\n\n# Conoce al equipo\n\n*Click en las fotos para ver más detalles*\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<div class=\"row\">\n<div class=\"card-column\">\n<div class=\"team-card\">\n<a href=\"castillo_jc/index.html\">\n<img class=\"team-image\" src=\"../images/people/jc.png\" alt=\"Juan Carlos Castillo\" style=\"width:100%\"/>\n</a>\n<div class=\"container\">\n<a href=\"castillo_jc/index.html\">\n<h4 class=\"name\">Juan Carlos Castillo</h4>\n</a>\n<p class=\"job-title\">Investigador Principal</p>\n</div>\n</div>\n</div>\n<div class=\"card-column\">\n<div class=\"team-card\">\n<a href=\"laffert_andreas/index.html\">\n<img class=\"team-image\" src=\"../images/people/andreas.jpg\" alt=\"Andreas Laffert\" style=\"width:100%\"/>\n</a>\n<div class=\"container\">\n<a href=\"laffert_andreas/index.html\">\n<h4 class=\"name\">Andreas Laffert</h4>\n</a>\n<p class=\"job-title\">Asistente de investigación</p>\n</div>\n</div>\n</div>\n<div class=\"card-column\">\n<div class=\"team-card\">\n<a href=\"urzua_tomas/index.html\">\n<img class=\"team-image\" src=\"../images/people/tomas.jpeg\" alt=\"Tomás Urzúa\" style=\"width:100%\"/>\n</a>\n<div class=\"container\">\n<a href=\"urzua_tomas/index.html\">\n<h4 class=\"name\">Tomás Urzúa</h4>\n</a>\n<p class=\"job-title\">Tesista</p>\n</div>\n</div>\n</div>\n</div>\n```\n\n:::\n\n::: {.cell-output-display}\n\n```{=html}\n<div class=\"row\">\n<div class=\"card-column\">\n<div class=\"team-card\">\n<a href=\"canales_rene/index.html\">\n<img class=\"team-image\" src=\"../images/people/rene.png\" alt=\"René Canales\" style=\"width:100%\"/>\n</a>\n<div class=\"container\">\n<a href=\"canales_rene/index.html\">\n<h4 class=\"name\">René Canales</h4>\n</a>\n<p class=\"job-title\">Colaborador</p>\n</div>\n</div>\n</div>\n</div>\n```\n\n:::\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

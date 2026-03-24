@@ -20,20 +20,22 @@ website:
   navbar:
     background: "#9B2626"
     foreground: "#FFFFFF"
-    title: ""
     search: true
-    logo: images/logos/jusmer_trans.png
+    logo: images/logos/jusmer-cuad-blanco.png
     right:
       - href: index.qmd
         icon: house-fill
         text: " "
       - href: software/index.qmd
         text: "Proyecto"
-      - href: about/index.qmd
-        text: "Equipo"
-      - href: posts/index.qmd
+      - href: index.qmd#noticiash1
+        text: "Noticias"
+      - href: index.qmd#presentacionesh1
+        text: "Presentaciones"
+      - href: index.qmd#publicacionesh1
         text: "Publicaciones"
-      - text: "Citaciones"
+      - href: equipo/index.qmd
+        text: "Equipo"
         menu:
         - href: research/citations/index.qmd
           text: "All citations"

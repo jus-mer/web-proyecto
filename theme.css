@@ -234,6 +234,34 @@ a:hover {
   line-height: 1;
 }
 
+.hero-logo {
+  width: 320px; /* ajusta según el tamaño que necesites */
+  height: auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center; /* o center si lo quieres centrado */
+  margin-top: 1em;
+}
+
+.btn-success {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.team-image {
+  width: 100%;
+  height: 250px;        /* altura fija para todas las fotos */
+  object-fit: cover;    /* recorta sin deformar */
+  object-position: top; /* enfoca la parte superior (cara) */
+}
+
+.team-card {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;       /* centra la tarjeta dentro de su columna */
+}
 
 .button {
   border: none;
