@@ -34,13 +34,11 @@ website:
         text: "Presentaciones"
       - href: index.qmd#publicacionesh1
         text: "Publicaciones"
-      - href: index.qmd/equipo#1
+      - href: index.qmd#equipoh1
         text: "Equipo"
         menu:
         - href: research/citations/index.qmd
           text: "All citations"
-      - href: https://www.ala.org.au
-        icon: ala
       - href: https://github.com/tomasurzuam/web-proyecto
         icon: github
 

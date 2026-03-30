@@ -1,25 +1,28 @@
 <style>
-.footer-minimal {
+.footer-full {
+  width: 100vw;                /* ocupa todo el ancho de la pantalla */
+  margin-left: calc(-50vw + 50%); /* rompe el centrado del contenedor */
+  background-color: #212525;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  background-color: #212525;
+  padding: 20px 0;
 }
 
-.footer-minimal a {
-  color: #fff;
+.footer-full a {
+  color: #ffffff;
   font-size: 28px;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.footer-minimal a:hover {
-  color: #000;
+.footer-full a:hover {
+  color: #cccccc;
+  transform: scale(1.2);
 }
 </style>
 
-<div class="footer-minimal">
+<div class="footer-full">
   <a href="https://github.com/tomasurzuam/web-proyecto" target="_blank">
     <i class="fab fa-github"></i>
   </a>

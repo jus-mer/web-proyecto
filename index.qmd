@@ -58,7 +58,7 @@ source("R/functions.R")
 :::{.column-screen-inset}
 :::{.home-column-image .col-right}
 <a href="https://labs.ala.org.au/lens">
-![](images/logos/jusmer-cuad-blanco.png){width="50%"}
+![](images/logos/jusmer-cuad-blanco.png){width="85%"}
 </a>
 
 :::
@@ -73,8 +73,16 @@ source("R/functions.R")
 
 </center>
 
+
+
 :::
 :::
+
+::: {.btn-container}
+[Sobre el proyecto](software/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
+:::
+
+
 :::
 
 
@@ -140,40 +148,34 @@ source("R/functions.R")
 :::
 :::
 
-***
 
 :::{.column-screen style="background-color:#fff;"}
-
-:::{.column-page}
+:::{.column-screen-inset}
 
 :::{#equipoh1}
 :::
 
 <center> <h1>{{< fa circle-user >}} Equipo</h1> </center>
 
-:::
-
-:::{.column-screen}
-
 ```{r}
 #| echo: false
-tags$div(class = "row",# Create a row for 3 team-member cards
+tags$div(class = "row", # Create a row for 3 team-member cards
          
 create_team_card(
-  person_page = "castillo_jc/index.html",
+  person_page = "https://jc-castillo.com/",
   img_src = "images/people/jc.png",
   name = "Juan Carlos Castillo",
   text = "Investigador Principal"
 ),
 create_team_card(
-  person_page = "laffert_andreas/index.html",
+  person_page = "https://andreas-lafferte.github.io/alaffert-website/",
   img_src = "images/people/andreas.jpg",
   name = "Andreas Laffert",
   text = "Asistente de investigación"
 ),
 create_team_card(
-  person_page = "urzua_tomas/index.html",
-  img_src = "images/people/tomas.jpeg",
+  person_page = "https://www.linkedin.com/in/tom%C3%A1s-urz%C3%BAa-moreno-b65755375/",
+  img_src = "images/people/tomas.jpg",
   name = "Tomás Urzúa",
   text = "Tesista"
 )
@@ -181,15 +183,16 @@ create_team_card(
 tags$div(class = "row", # Create a row for 3 team-member cards
          
 create_team_card(
-  person_page = "canales_rene/index.html",
-  img_src = "images/people/rene.png",
+  person_page = "https://renejcanales.github.io/renecanales-website/",
+  img_src = "images/people/rene.jpg",
   name = "René Canales",
   text = "Asistente de investigación"
 )
 )
 ```
 
+:::
+:::
 
-:::
-:::
+
 

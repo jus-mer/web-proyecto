@@ -239,13 +239,8 @@ window.Quarto = {
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.qmd/equipo#1"> 
+    <a class="nav-link" href="./index.html#equipoh1"> 
 <span class="menu-text">Equipo</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.ala.org.au"> <i class="bi bi-ala" role="img">
-</i> 
-<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/tomasurzuam/web-proyecto"> <i class="bi bi-github" role="img">
@@ -282,7 +277,7 @@ Acerca de
 <div class="column-screen page-columns page-full">
 <div class="column-screen-inset">
 <div class="home-column-image col-right">
-<p><a href="https://labs.ala.org.au/lens"> <img src="images/logos/jusmer-cuad-blanco.png" class="img-fluid" style="width:50.0%"> </a></p>
+<p><a href="https://labs.ala.org.au/lens"> <img src="images/logos/jusmer-cuad-blanco.png" class="img-fluid" style="width:85.0%"> </a></p>
 </div>
 <div class="home-column-text col-left">
 <center>
@@ -290,6 +285,9 @@ Acerca de
 <p><span>La principal hipótesis de este proyecto es que las preferencias por justicia de mercado se asocian con las percepciones de distintos criterios de merecimiento, las que tienen un fuerte trasfondo cultural.</span><br></p>
 </center>
 </div>
+</div>
+<div class="btn-container">
+<p><a href="./software/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #212525; margin-top: 0em;">Sobre el proyecto</a></p>
 </div>
 </div>
 <div class="column-screen page-columns page-full" style="background-color:#9B2626;">
@@ -418,9 +416,8 @@ Publicaciones
 </div>
 </div>
 </div>
-<hr>
 <div class="column-screen page-columns page-full" style="background-color:#fff;">
-<div class="column-page">
+<div class="column-screen-inset">
 <div id="equipoh1">
 
 </div>
@@ -429,18 +426,16 @@ Publicaciones
 <i class="fa-solid fa-circle-user" aria-label="circle-user"></i> Equipo
 </h1>
 </center>
-</div>
-<div class="column-screen">
 <div class="cell">
 <div class="cell-output-display">
 <div class="row">
 <div class="card-column">
 <div class="team-card">
-<a href="castillo_jc/index.html">
+<a href="https://jc-castillo.com/">
 <img class="team-image" src="images/people/jc.png" alt="Juan Carlos Castillo" style="width:100%">
 </a>
 <div class="container">
-<a href="castillo_jc/index.html">
+<a href="https://jc-castillo.com/">
 <h4 class="name">Juan Carlos Castillo</h4>
 </a>
 <p class="job-title">Investigador Principal</p>
@@ -449,11 +444,11 @@ Publicaciones
 </div>
 <div class="card-column">
 <div class="team-card">
-<a href="laffert_andreas/index.html">
+<a href="https://andreas-lafferte.github.io/alaffert-website/">
 <img class="team-image" src="images/people/andreas.jpg" alt="Andreas Laffert" style="width:100%">
 </a>
 <div class="container">
-<a href="laffert_andreas/index.html">
+<a href="https://andreas-lafferte.github.io/alaffert-website/">
 <h4 class="name">Andreas Laffert</h4>
 </a>
 <p class="job-title">Asistente de investigación</p>
@@ -462,11 +457,11 @@ Publicaciones
 </div>
 <div class="card-column">
 <div class="team-card">
-<a href="urzua_tomas/index.html">
-<img class="team-image" src="images/people/tomas.jpeg" alt="Tomás Urzúa" style="width:100%">
+<a href="https://www.linkedin.com/in/tom%C3%A1s-urz%C3%BAa-moreno-b65755375/">
+<img class="team-image" src="images/people/tomas.jpg" alt="Tomás Urzúa" style="width:100%">
 </a>
 <div class="container">
-<a href="urzua_tomas/index.html">
+<a href="https://www.linkedin.com/in/tom%C3%A1s-urz%C3%BAa-moreno-b65755375/">
 <h4 class="name">Tomás Urzúa</h4>
 </a>
 <p class="job-title">Tesista</p>
@@ -479,11 +474,11 @@ Publicaciones
 <div class="row">
 <div class="card-column">
 <div class="team-card">
-<a href="canales_rene/index.html">
-<img class="team-image" src="images/people/rene.png" alt="René Canales" style="width:100%">
+<a href="https://renejcanales.github.io/renecanales-website/">
+<img class="team-image" src="images/people/rene.jpg" alt="René Canales" style="width:100%">
 </a>
 <div class="container">
-<a href="canales_rene/index.html">
+<a href="https://renejcanales.github.io/renecanales-website/">
 <h4 class="name">René Canales</h4>
 </a>
 <p class="job-title">Asistente de investigación</p>
@@ -500,275 +495,34 @@ Publicaciones
 
 
 </main> <!-- /main -->
-<!-- ALA Template Footer -->
-
 <style>
-
-/*-- Copyright --*/
-
-.copyright-container {
-  display: flex!important;
-  width: 100%;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.copyright-row {
-  width: 100%;
-
-  position: relative;
-
-  background-color: #9b2626;
-  background-position: bottom;
-  background-size: cover;
+.footer-full {
+  width: 100vw;                /* ocupa todo el ancho de la pantalla */
+  margin-left: calc(-50vw + 50%); /* rompe el centrado del contenedor */
+  background-color: #212525;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
-.copyright-width {
-  display: flex;
-  width: 100%;
-  max-width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 0px;
-  margin: auto;
-}
-
-.copyright-column-left {
-  float: left;
-  width: 50%;
-  max-width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  display: flex!important;
-  flex-direction:column;
-  display:inline-block;
-}
-
-.copyright-column-right {
-  float: right;
-  text-align: right;
-  width: 50%;
-  max-width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  display: flex!important;
-  flex-direction: column;
-  display:inline-block;
-}
-
-.copyright-text {
-  color: white;
-  font-size: 12px;
-  padding-top: 10px}
-
-.copyright-text a:hover {
-  color: #222322;
-}
-
-
-/*-- Logos and acknowledgement --*/
-
-.footer-container {
-  display: flex!important;
-  width: 100%;
-  max-width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: auto;
-}
-
-.distill-site-footer {
-  padding-top: 0px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-
-.row-footer { /* Do not change the name of this column - it causes issues */
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
-
-.column-footer { /* Do not change the name of this column - it causes issues */
-  float: left;
-  width: 50%;
-  max-width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  display: flex;
-  flex-direction:column;
-  display:inline-block;
-}
-
-
-.footer-logo {
-  text-align: left;
-  margin:5px;
-}
-
-.footer-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 1.2;
-  color: #565656;
-  text-align: left;
-}
-
-.footer-text-small {
-  font-family: Roboto,sans-serif;
-  font-size: .82rem;
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: #565656;
-  text-align: left;
-  margin-top: 10px;
-}
-
-/*-- Back to ALA button --*/
-
-.link-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: block;
-  width: 30em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.link-button {
-  border: none;
-  color: #e0c008;
-  padding: 10px 15px;
-  text-align: center;
+.footer-full a {
+  color: #ffffff;
+  font-size: 28px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  margin: 4px 2px;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  background-color: white;
-  border: 2px solid #E06E53;
-  border-radius: 10px;
+  transition: 0.3s;
 }
 
-.link-button:hover {
-  background-color: #222322;
-  border: 2px solid #222322;
-  color: #E0c008;
+.footer-full a:hover {
+  color: #cccccc;
+  transform: scale(1.2);
 }
-
-.ala-icon {
-    height: 20px;
-    width: auto;
-    /* Other styles here */
-}
-
-@media screen and (max-width: 952px) {
-  .link-container {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .footer-container {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .column-footer {
-    float:left;
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    margin-top: 20px;
-  }
-  .link-container {
-    display: block;
-    width: 20em;
-    margin: auto;
-  }
-
-  .copyright-column-left {
-    width: 50%;
-  }
-
-  .copyright-column-right {
-    width: 50%;
-  }
-
-  .copyright-row {
-    height: 100px;
-    margin-bottom: -3.75vw;
-  }
-}
-
-.logo-ncris {
-  width: auto;
-  height: 109px;
-  margin-right: 15px;
-  margin-top: 20px;
-}
-
-.logo-csiro {
-  width: auto;
-  height: 109px;
-  margin-right: 15px;
-  margin-top: 20px;
-}
-
-.logo-gbif {
-  width: auto;
-  height: 109px;
-}
-
-@media (min-width: 992px) {}
-body .page-columns{
-  grid-column: screen-start/screen-end;
-  z-index: 998;
-  transform: translate3d(0, 0, 0);
-}
-}
-
 </style>
 
-  </div>
-<!--  </div>-->
-
-
-<div class="copright-container column-screen">
-  <div class="copyright-row">
-     <div class="copyright-width">
-  		<div class="copyright-column-left">
-  				<p class="copyright-text">
-  					This work is licensed under a <a style="color:#fff!important;" href="https://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a>
-  					<a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/"><img alt="Creative Commons License" style="border-width:0" src="images/logos/cc-by.png"></a>
-  				</p>
-		</div><!--col end -->
-    	<div class="copyright-column-right">
-         <p class="copyright-text">
-           <a style="color:#fff!important;" href="https://www.ala.org.au/terms-of-use#cy">Copyright</a>
-           &nbsp;&nbsp;
-           <a style="color:#fff!important;" href="https://www.ala.org.au/terms-of-use">Terms of Use</a>
-           &nbsp;&nbsp;
-           <a style="color:#fff!important;" href="https://status.ala.org.au/">System Status</a>
-         </p>
-      </div>
-    </div>
-	</div><!-- row end -->
+<div class="footer-full">
+  <a href="https://github.com/tomasurzuam/web-proyecto" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1163,7 +917,7 @@ body .page-columns{
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 
 
 

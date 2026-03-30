@@ -13,7 +13,7 @@
   position: absolute;
   bottom: 0;
   /* liner gradient tints the image darker for readability*/
-  background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ), url(images/multitud.jpeg);
+  background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ), url(images/multitud.png);
   background-size: cover;
   height: auto;
   width: 100vw;
@@ -226,14 +226,17 @@
   flex-direction: column;
 }
 
+/* Desktop: columnas en su posición original */
 .col-left {
   float: left;
   margin-left: 20%;
+  width: 30%;
 }
 
 .col-right {
-  float:right;
+  float: right;
   margin-right: 20%;
+  width: 30%;
 }
 
 img.home-img {
@@ -277,7 +280,7 @@ img.lens-logo {
 
 /* Display the columns below each other instead of side by side on small screens */
 
-@media (max-width: 1660px) {
+@media (max-width: 952px) {
   .col-left {
     margin-left: auto;
     margin-right: auto;
@@ -296,30 +299,30 @@ img.lens-logo {
   }
 }
 
+/* Móvil: apiladas y centradas */
 @media screen and (max-width: 952px) {
-  .home-column-image {
-    width: 100%;
-    display: block;
+  .col-left {
+    float: none;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -50px;
+    width: 80%;
   }
+
+  .col-right {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .home-column-image,
   .home-column-text {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-
-  .col-left {
-    display: block;
-    margin-left: auto;
-  }
-
-  .col-right {
-    display: block;
-    margin-right: auto;
-  }
+}
 
   img.home-img {
   width: 100%;
@@ -382,3 +385,38 @@ img {
 }
 
 
+/* === Márgenes consistentes para todas las secciones del home === */
+
+/* Fuerza que .column-screen-inset y .column-body tengan el mismo ancho máximo */
+.column-screen-inset {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.column-body {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.column-page {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 952px) {
+  .column-screen-inset,
+  .column-body,
+  .column-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
