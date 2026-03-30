@@ -136,13 +136,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publicaciones</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/web-proyecto/docs/index.html/index.qmd/equipo#1"> 
+    <a class="nav-link" href="/web-proyecto/docs/index.html/./index.html#equipoh1"> 
 <span class="menu-text">Equipo</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.ala.org.au"> <i class="bi bi-ala" role="img">
-</i> 
-<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/tomasurzuam/web-proyecto"> <i class="bi bi-github" role="img">
@@ -190,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 <div style="text-align:center;">
 <p>We’ve moved some things around, but <strong>all the content is still here!</strong> <br>(It might just be called something different)</p>
 </div>
-<div class="quarto-layout-panel" style="margin-left: auto; margin-right: auto;" data-layout="[-1,1,-1]">
+<div class="quarto-layout-panel" data-layout="[-1,1,-1]" style="margin-left: auto; margin-right: auto;">
 <div class="quarto-layout-row">
 <div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <p>&nbsp;</p>
@@ -214,26 +209,30 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <style>
-.footer-minimal {
+.footer-full {
+  width: 100vw;                /* ocupa todo el ancho de la pantalla */
+  margin-left: calc(-50vw + 50%); /* rompe el centrado del contenedor */
+  background-color: #212525;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
-.footer-minimal a {
-  color: #333;
+.footer-full a {
+  color: #ffffff;
   font-size: 28px;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.footer-minimal a:hover {
-  color: #000;
+.footer-full a:hover {
+  color: #cccccc;
+  transform: scale(1.2);
 }
 </style>
 
-<div class="footer-minimal">
+<div class="footer-full">
   <a href="https://github.com/tomasurzuam/web-proyecto" target="_blank">
     <i class="fab fa-github"></i>
   </a>

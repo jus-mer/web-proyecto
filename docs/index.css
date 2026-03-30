@@ -10,19 +10,18 @@
 }
 
 .hero-image {
-  position: absolute;
-  bottom: 0;
-  /* liner gradient tints the image darker for readability*/
-  background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ), url(images/multitud.png);
+  position: relative; /* ← cambia de absolute a relative */
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(images/multitud.png);
   background-size: cover;
-  height: auto;
+  background-position: center; /* ← opcional pero recomendado */
+  height: 52vh;               /* ← altura explícita en vez de auto */
   width: 100vw;
   background-color: #141c25;
-  display: flex; /* Change to `display: none` for no hero image */
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;        /* ← esto ya centra el contenido verticalmente */
   background-repeat: no-repeat;
-  padding: 21vh 0;
+  /* padding: 21vh 0  ← eliminar, ya no es necesario con height + align-items */
 }
 
 .ALA-top {
