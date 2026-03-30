@@ -4,5 +4,5 @@ Este repositorio aloja la página web del Proyecto FONDECYT Regular "Justicia de
 
 La página fue construida casi en su totalidad con Quarto, y tomó como inspiración el sitio de [ALA Labs](https://labs.ala.org.au/)
 
-para acceder a la página, haga click [aquí](https://tomasurzuam.github.io/web-proyecto/docs/).
+para acceder a la página, haga click [aquí](https://jus-mer.github.io/web-proyecto/docs/).
 
