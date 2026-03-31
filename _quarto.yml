@@ -54,6 +54,7 @@ format:
     code-overflow: scroll
     linkcolor: "#B8573E"
     include-before-body: _fathom.html
+    include-in-header: translate.html
 
 execute:
   freeze: auto

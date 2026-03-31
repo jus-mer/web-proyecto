@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7f3342dc54ab55c28ac537564d484950.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-247b1538370651281756f106a62ca763.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -99,6 +100,161 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+  /* Oculta la barra superior de Google Translate */
+  .goog-te-banner-frame.skiptranslate { display: none !important; }
+  body { top: 0 !important; }
+
+  /* Evita saltos por iframes de Google */
+  html body .skiptranslate > iframe { visibility: hidden !important; }
+
+  /* Contenedor del widget: en DOM pero invisible */
+  .gtrans-slot { width: 0; height: 0; overflow: hidden; }
+
+  /* Botón-bandera en la navbar */
+  .nav-item.gtrans-flag { display: flex; align-items: center; }
+  .nav-item.gtrans-flag a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0 .4rem;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  // ── Busca la sección derecha de la navbar de Quarto ──────────────────────────
+  function findRightNav() {
+    const targets = document.querySelectorAll(
+      '#quarto-header .navbar .navbar-nav.ms-auto, #quarto-header .navbar .navbar-nav:last-child'
+    );
+    for (const el of targets) if (el) return el;
+    return null;
+  }
+
+  // ── Lee el idioma actual desde la cookie de Google ───────────────────────────
+  function currentLangFromCookie() {
+    const m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+    if (!m) return 'es';
+    const v = decodeURIComponent(m[1]).split('/');
+    return v[v.length - 1] || 'es';
+  }
+
+  // ── Actualiza la bandera según el idioma activo ──────────────────────────────
+  function updateFlag() {
+    const a = document.getElementById('gtrans-flag-toggle');
+    if (!a) return;
+    const lang = currentLangFromCookie();
+    a.textContent = (lang === 'en') ? '🇨🇱' : '🇬🇧';
+    a.title       = (lang === 'en') ? 'Ver en español' : 'View in English';
+    a.setAttribute('aria-label', a.title);
+  }
+
+  // ── Fallback: guarda cookie y recarga la página ──────────────────────────────
+  function setCookieAndReload(lang) {
+    const val  = `/auto/${lang}`;
+    const d    = new Date(); d.setFullYear(d.getFullYear() + 1);
+    const base = `googtrans=${val}; expires=${d.toUTCString()}; path=/`;
+    const host = location.hostname;
+    const root = '.' + host.replace(/^www\./, '');
+    document.cookie = base;
+    document.cookie = `${base}; domain=${host}`;
+    document.cookie = `${base}; domain=${root}`;
+    location.reload();
+  }
+
+  // ── Inserta el botón y el widget oculto en la navbar ────────────────────────
+  function ensureNavItems() {
+    const right = findRightNav();
+    if (!right) return false;
+
+    // Botón-bandera
+    if (!document.getElementById('gtrans-flag-toggle')) {
+      const li = document.createElement('li');
+      li.className = 'nav-item gtrans-flag';
+      li.innerHTML = `<a id="gtrans-flag-toggle" title="Cambiar idioma" role="button" tabindex="0">🌐</a>`;
+      right.appendChild(li);
+    }
+
+    // Contenedor oculto del widget de Google
+    if (!document.getElementById('google_translate_element')) {
+      const li2 = document.createElement('li');
+      li2.className = 'nav-item';
+      li2.innerHTML = `<div id="google_translate_element" class="gtrans-slot"></div>`;
+      right.appendChild(li2);
+    }
+    return true;
+  }
+
+  // ── Cambia idioma usando el combo interno de Google ──────────────────────────
+  function changeViaCombo(lang) {
+    const combo = document.querySelector('select.goog-te-combo');
+    if (!combo) return false;
+    combo.value = lang;
+    combo.dispatchEvent(new Event('change'));
+    setTimeout(updateFlag, 700);
+    return true;
+  }
+
+  // ── Callback oficial requerido por Google Translate ──────────────────────────
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'es',
+        includedLanguages: 'es,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      },
+      'google_translate_element'
+    );
+
+    // Conecta eventos una vez que el DOM esté listo
+    const tryWire = () => {
+      ensureNavItems();
+      updateFlag();
+
+      const btn = document.getElementById('gtrans-flag-toggle');
+      if (btn && !btn._wired) {
+        btn._wired = true;
+
+        const toggle = (e) => {
+          e.preventDefault();
+          const current = currentLangFromCookie();
+          const next    = (current === 'en') ? 'es' : 'en';
+          if (!changeViaCombo(next)) setCookieAndReload(next);
+        };
+
+        btn.addEventListener('click', toggle);
+        // Accesibilidad: también responde a Enter/Space con teclado
+        btn.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') toggle(e);
+        });
+      }
+    };
+
+    // Espera a que Google inyecte el combo (hasta ~6 segundos)
+    let tries = 0;
+    const t = setInterval(() => {
+      tries++;
+      tryWire();
+      if (document.querySelector('select.goog-te-combo') || tries > 30) {
+        clearInterval(t);
+      }
+    }, 200);
+  }
+
+  // Expone el callback globalmente (requerido por Google)
+  window.googleTranslateElementInit = googleTranslateElementInit;
+
+  // Primer pintado de la bandera antes de que cargue el script de Google
+  document.addEventListener('DOMContentLoaded', () => {
+    ensureNavItems();
+    updateFlag();
+  });
+</script>
+
+<!-- Carga la librería de Google Translate con el callback registrado -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -114,7 +270,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -150,7 +306,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/logos/jusmer-cuad-blanco.png" alt="" class="navbar-logo">
+    <img src="../../images/logos/jusmer-cuad-blanco.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/logos/jusmer-cuad-blanco.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">JUSMER</span>
@@ -242,7 +399,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1774895947876" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="quarto-post image-right" data-index="0" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1774935284861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../../references/publications/posts/2026_Justification_Trajec.html" class="no-external">Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy</a>
@@ -264,7 +421,7 @@ Castillo, Juan Carlos; Canales-Selles, Rene; Laffert, Andreas &amp; Urzua, Tomas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1774895947881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="quarto-post image-right" data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1774935284861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../../references/publications/posts/2026_Stability_and_Compar.html" class="no-external">Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts</a>
@@ -286,7 +443,7 @@ Laffert, Andreas; Castillo, Juan Carlos; Canales, Rene; Urzua, Tomas &amp; Carra
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1774895947873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="quarto-post image-right" data-index="2" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1774935284861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../../references/publications/posts/2025_Changes_in_the_Justi.html" class="no-external">Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic</a>
@@ -308,7 +465,7 @@ Castillo, Juan Carlos; Iturra, Julio &amp; Carrasco, Kevin
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1774895947879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="quarto-post image-right" data-index="3" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1774935284861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../../references/publications/posts/2025_Perceptions_of_Inequ.html" class="no-external">Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)</a>
@@ -330,7 +487,7 @@ Castillo, Juan Carlos; Laffert, Andreas; Carrasco, Kevin &amp; Iturra-Sanhueza, 
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1730430000000" data-listing-file-modified-sort="1774895947880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<div class="quarto-post image-right" data-index="4" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1730430000000" data-listing-file-modified-sort="1774935284861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../../references/publications/posts/2024_The_Socialization_of.html" class="no-external">The Socialization of Meritocracy and Market Justice Preferences at School</a>
@@ -352,7 +509,7 @@ Castillo, Juan Carlos; Salgado, Mauricio; Carrasco, Kevin &amp; Laffert, Andreas
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1774895947877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="quarto-post image-right" data-index="5" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1698807600000" data-listing-file-modified-sort="1774935284861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../../references/publications/posts/2023_A_Multidimensional_A.html" class="no-external">A Multidimensional Approach for Measuring Meritocratic Beliefs: Advantages, Limitations and Alternatives to the ISSP Social Inequality Survey</a>
@@ -428,13 +585,14 @@ Castillo, Juan Carlos; Iturra, Julio; Maldonado, Luis; Atria, Jorge &amp; Menese
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

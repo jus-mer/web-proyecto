@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 ::: {.btn-container}
-[Más publicaciones](noticias/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
+[Más publicaciones](references/publications/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
 :::
 
 :::
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
 :::
 
 ::: {.btn-container}
-[Más presentaciones](presentaciones/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
+[Más presentaciones](references/presentations/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
 :::
 
 :::
