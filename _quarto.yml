@@ -31,10 +31,10 @@ website:
         text: "Proyecto"
       - href: index.qmd#noticiash1
         text: "Noticias"
-      - href: index.qmd#presentationsh1
-        text: "Presentaciones"
-      - href: index.qmd#publicacionesh1
+      - href: index.qmd#publicationsh1
         text: "Publicaciones"
+      - href: index.qmd#presentationsh1
+        text: "Presentaciones"        
       - href: index.qmd#equipoh1
         text: "Equipo"
         menu:

@@ -1,5 +1,5 @@
 ---
-title: "Presentations"
+title: "Presentaciones"
 page-layout: full
 listing:
   contents: posts/*.qmd
