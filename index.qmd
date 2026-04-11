@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
 :::{#equipoh1}
 :::
 
-# Equipo
+# Investigadores
 
 ```{r}
 #| echo: false
@@ -241,13 +241,19 @@ create_team_card(
   person_page = "https://www.linkedin.com/in/tom%C3%A1s-urz%C3%BAa-moreno-b65755375/",
   img_src = "images/people/tomas.jpg",
   name = "Tomás Urzúa",
-  text = "Tesista"
+  text = "Asistente de investigación"
 ),
 create_team_card(
   person_page = "https://renejcanales.github.io/renecanales-website/",
   img_src = "images/people/rene.jpg",
   name = "René Canales",
   text = "Asistente de investigación"
+),
+create_team_card(
+  person_page = "https://www.bigsss-bremen.de/people/phd-fellows/julio-iturra-sanhueza",
+  img_src = "images/people/julio-2.png",
+  name = "Julio Iturra",
+  text = "Investigador visitante"
 )
 )
 ```
