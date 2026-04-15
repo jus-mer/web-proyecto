@@ -9,10 +9,13 @@ abstract : "(Abstract not available)"
 abstract_short : ""
 about:
   template: marquee
-  links:
-    - icon: NA
-      href: NA
 ---
+<iframe 
+ src="https://educacion-meritocracia.github.io/merit-factorial/presentations/ACMME_2026/acmme_2026.html" title="quarto presentation"
+style="width: 100%; max-width: 100%; height: 450px; border: 0;"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
 
 
 ::: {.callout-note title="How to cite this work"}
