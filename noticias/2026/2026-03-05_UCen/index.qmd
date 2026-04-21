@@ -1,0 +1,25 @@
+---
+title: "Presentación sobre preferencias por la justicia de mercado en el sistema de pensiones chileno"
+subtitle: "Seminario Después de la Revuelta: Revueltas sociales, incertidumbre y polarización social"
+categories: [noticias]
+# Date published
+date: "2026-03-05"
+draft: false
+image: "featured.jpeg"
+about:
+  template: marquee
+  image: "featured.jpeg" 
+title-block-banner: "#212525"   
+---
+
+<!------------------------ Post starts here ------------------------>
+
+En el marco del seminario “Después de la Revuelta: Revueltas sociales, incertidumbre y polarización social” organizado por el Fondecyt "Legitimation, Ideology and Contentious Collective Action", el Centro de Investigación en Economía y Sociedad de la Universidad Central de Chile y el Intituto Milenio para la Autoridad y la Regulación Social. En este contexto, el equipo presentó el artículo "Justification trajectories for pension inequality in Chile (2016–2023): the role of social class and beliefs in meritocracy" recientemente publicado en Frontiers in Sociology.
+
+La presentación se centró en discutir los hallazgos del trabajo y la agenda de investigación del proyecto JUSMER. A nivel analítico, la presentación abordó la relación entre clase social, creencias meritocráticas y legitimación de desigualdades previsionales en Chile entre 2016 y 2023. En particular, se discutió la distinción entre percepciones de merecimiento asociadas al esfuerzo y al talento, así como su papel en la justificación de resultados distributivos en el sistema de pensiones.
+
+Metodológicamente, se presentaron resultados basados en seis olas de la Encuesta Longitudinal Social de Chile (ELSOC), utilizando modelos longitudinales que permiten distinguir entre diferencias estables entre individuos y cambios intraindividuales a lo largo del tiempo. Este enfoque permitió observar cómo tanto las posiciones sociales relativamente estables como las transformaciones en las percepciones meritocráticas se vinculan con la legitimación de la distribución previsional.
+
+Entre los principales hallazgos discutidos, se destacó que la clase social objetiva no aparece como un predictor significativo de las preferencias por justicia de mercado en pensiones, sugiriendo un fenómeno de “neutralización de clase” en la legitimación del sistema. En cambio, las creencias que enfatizan el esfuerzo individual se asocian consistentemente con una mayor justificación de las desigualdades previsionales. Por su parte, las percepciones basadas en el talento no presentan un efecto general uniforme, pero sí muestran asociaciones específicas en ciertos grupos, particularmente en sectores intermedios y en personas desempleadas.
+
+La discusión final subrayó que la propia arquitectura institucional del sistema previsional chileno contribuye a enmarcar los resultados en pensiones como consecuencia de la responsabilidad individual, debilitando potencialmente la articulación de demandas redistributivas basadas en la posición de clase. En este sentido, el trabajo permitió abrir una conversación sobre los mecanismos ideológicos y perceptivos que sostienen la legitimidad de la desigualdad en uno de los ámbitos más sensibles del bienestar social en Chile.

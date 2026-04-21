@@ -9,15 +9,16 @@ format:
     anchor-sections: false
     css: [theme.css, index.css]
 listing:
-# - id: noticias
-#   contents: "noticias/2026/**/*.qmd"
-#   sort: date desc
-#   type: grid
-#   grid-columns: 3
-#   image-height: 300px
-#   fields: [image, title, description]
-#   max-items: 6
-#   categories: false
+
+- id: noticias
+  contents: "noticias/2026/**/*.qmd"
+  sort: date desc
+  type: grid
+  grid-columns: 3
+  image-height: 200px
+  fields: [image, title, description]
+  max-items: 6
+  categories: false
 
 - id: publications
   contents: "references/publications/posts/*.qmd"
@@ -95,16 +96,14 @@ source("R/functions.R")
 :::
 
 
-<!-- :::{.column-screen style="background-color:#9B2626;"}
+:::{.column-screen style="background-color:#9B2626;"}
 :::{.column-screen-inset}
 
 :::{#noticiash1}
 :::
 
 
-<center> <h1 class="heading-home" style="color: #fff;">Noticias</h1>
-<span style = "color: #fff; font-style: italic">Últimas actualizaciones</span> 
-</center>
+# <span style="color: #fff;">Noticias</span>
 
 ::: {#noticias}
 :::
@@ -114,7 +113,8 @@ source("R/functions.R")
 :::
 
 :::
-::: -->
+:::
+
 
 :::{.column-screen style="background-color:#fff;"}
 :::{.column-screen-inset}
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 ::: {.btn-container}
-[Más publicaciones](references/publications/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
+[Más publicaciones](references/publications/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #9d3636; margin-top: 0em;"}
 :::
 
 :::
@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
 :::{#equipoh1}
 :::
 
-# Investigadores
+# <span style="color: #8f2b2b;">Investigadores</span>
 
 ```{r}
 #| echo: false

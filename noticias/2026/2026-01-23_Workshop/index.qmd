@@ -1,0 +1,25 @@
+---
+title: "Workshop de enfoques experimentales sobre redistribución y el merecimiento"
+subtitle: "Primer Workshop del proyecto Justicia de Mercado y Merecimiento del Bienestar Social (JUSMER)"
+categories: [noticias]
+# Date published
+date: "2026-01-24"
+draft: false
+image: "featured.jpg"
+about:
+  template: marquee
+  image: "featured.jpg" 
+title-block-banner: "#212525"   
+---
+
+<!------------------------ Post starts here ------------------------>
+
+El pasado 23 de enero de 2026, se llevó a cabo el primer Workshop del proyecto Justicia de Mercado y Merecimiento del Bienestar Social (JUSMER), titulado "Enfoques experimentales sobre redistribución y el merecimiento". Este evento reunió a investigadores y expertos en el campo de la justicia social para discutir y explorar enfoques experimentales relacionados con la redistribución de recursos y la percepción del merecimiento en la sociedad.
+
+El workshop tuvo por objetivo compartir y discutir evidencia experimental y estrategias de identificación causal para estudiar actitudes hacia la desigualdad, la redistribución y el merecimiento en distintos ámbitos del bienestar, considerando tanto políticas estatales como arreglos mediados por el mercado, particularmente en áreas como salud, educación y pensiones.
+
+La jornada reunió a investigadoras e investigadores que presentaron trabajos en curso y resultados de investigación ya consolidados, permitiendo comparar enfoques teóricos, diseños metodológicos y hallazgos empíricos. Participaron como expositores/as Alejandra Vásquez (Universidad de Santiago de Chile), Rafel Carranza (Pontificia Universidad Católica de Chile), Mauricio Salgado (Universidad de Chile) y Juan Carlos Castillo (Universidad de Chile / COES), quienes abordaron distintas dimensiones vinculadas a las percepciones de desigualdad, las preferencias redistributivas, la cohesión social y los criterios de merecimiento.
+
+El formato del encuentro favoreció el intercambio académico y la discusión colectiva alrededor de los temas vinculados con la redistribución y el merecimiento, ya que cada presentación contó con un espacio de comentarios por parte de las y los asistentes. Esto permitió identificar puntos de convergencia entre las investigaciones presentadas, así como debates abiertos y posibles líneas de desarrollo futuro.
+
+En conjunto, el workshop funcionó como una instancia de circulación y discusión de conocimiento, pero también como un espacio de colaboración orientado a generar insumos para nuevas propuestas experimentales que puedan ser incorporadas a la encuesta 2026 del proyecto FONDECYT JUSMER. De esta manera, la actividad contribuyó a fortalecer la producción de evidencia empírica en Chile sobre los mecanismos que estructuran las actitudes y preferencias en torno a la desigualdad y el bienestar.

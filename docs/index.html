@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,13 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7f3342dc54ab55c28ac537564d484950.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-247b1538370651281756f106a62ca763.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +71,34 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-noticias .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-noticias'] = new List('listing-noticias', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-publications .list');
@@ -296,7 +325,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -337,7 +366,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logos/jusmer-cuad-blanco.png" alt="" class="navbar-logo">
+    <img src="./images/logos/jusmer-cuad-blanco.png" alt="" class="navbar-logo light-content">
+    <img src="./images/logos/jusmer-cuad-blanco.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">JUSMER</span>
@@ -420,26 +450,72 @@ window.Quarto = {
 </div>
 
 </div>
-<!-- :::{.column-screen style="background-color:#9B2626;"}
-:::{.column-screen-inset}
+<div class="column-screen page-columns page-full" style="background-color:#9B2626;">
+<div class="column-screen-inset">
+<div id="noticiash1">
 
-:::{#noticiash1}
-:::
-
-
-<center> <h1 class="heading-home" style="color: #fff;">Noticias</h1>
-<span style = "color: #fff; font-style: italic">Últimas actualizaciones</span> 
-</center>
-
-::: {#noticias}
-:::
-
-::: {.btn-container}
-[Noticias anteriores](noticias/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
-:::
-
-:::
-::: -->
+</div>
+<section id="noticias" class="level1">
+<h1><span style="color: #fff;">Noticias</span></h1>
+<div id="listing-noticias" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="bm90aWNpYXM=" data-listing-date-sort="1773370800000" data-listing-file-modified-sort="1776785231226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="379">
+<a href="./noticias/2026/2026-03-13_paper-frontiers/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./noticias/2026/2026-03-13_paper-frontiers/featured.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="noticias">
+Nueva publicación en Frontiers of Sociology
+</h5>
+<div class="card-text listing-description delink">
+A comienzos de marzo publicamos un artículo que escribimos como equipo de JusMer en Frontiers in Sociology, titulado «<strong>Justification trajectories for pension inequality in…</strong>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bm90aWNpYXM=" data-listing-date-sort="1772679600000" data-listing-file-modified-sort="1776785224435" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="379">
+<a href="./noticias/2026/2026-03-05_UCen/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./noticias/2026/2026-03-05_UCen/featured.jpeg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Presentación sobre preferencias por la justicia de mercado en el sistema de pensiones chileno
+</h5>
+<div class="card-text listing-description delink">
+En el marco del seminario “Después de la Revuelta: Revueltas sociales, incertidumbre y polarización social” organizado por el Fondecyt “Legitimation, Ideology and…
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="bm90aWNpYXM=" data-listing-date-sort="1769223600000" data-listing-file-modified-sort="1776785143554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<a href="./noticias/2026/2026-01-23_Workshop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./noticias/2026/2026-01-23_Workshop/featured.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Workshop de enfoques experimentales sobre redistribución y el merecimiento
+</h5>
+<div class="card-text listing-description delink">
+El pasado 23 de enero de 2026, se llevó a cabo el primer Workshop del proyecto Justicia de Mercado y Merecimiento del Bienestar Social (JUSMER), titulado “Enfoques…
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div class="btn-container">
+<p><a href="./noticias/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #212525; margin-top: 0em;">Noticias anteriores</a></p>
+</div>
+</section>
+</div>
+</div>
 <div class="column-screen page-columns page-full" style="background-color:#fff;">
 <div class="column-screen-inset">
 <div id="publicationsh1">
@@ -491,7 +567,7 @@ publication
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1776288474194" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy" data-listing-filename-sort="2026_Justification_Trajec.qmd">
+<tr data-index="0" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1776262272743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy" data-listing-filename-sort="2026_Justification_Trajec.qmd">
 <td>
 <a href="./references/publications/posts/2026_Justification_Trajec.html" class="title listing-title">Justification Trajectories for Pension Inequality in Chile (2016–2023): The Role of Social Class and Beliefs in Meritocracy</a>
 </td>
@@ -507,7 +583,7 @@ publication
 
 </tr>
 
-<tr data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1776288474203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40" data-listing-title-sort="Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts" data-listing-filename-sort="2026_Stability_and_Compar.qmd">
+<tr data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1772334000000" data-listing-file-modified-sort="1776262272765" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40" data-listing-title-sort="Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts" data-listing-filename-sort="2026_Stability_and_Compar.qmd">
 <td>
 <a href="./references/publications/posts/2026_Stability_and_Compar.html" class="title listing-title">Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts</a>
 </td>
@@ -523,7 +599,7 @@ publication
 
 </tr>
 
-<tr data-index="2" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1776288474190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic" data-listing-filename-sort="2025_Changes_in_the_Justi.qmd">
+<tr data-index="2" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1776262272717" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41" data-listing-title-sort="Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic" data-listing-filename-sort="2025_Changes_in_the_Justi.qmd">
 <td>
 <a href="./references/publications/posts/2025_Changes_in_the_Justi.html" class="title listing-title">Changes in the Justification of Educational Inequalities: The Role of Perceptions of Inequality and Meritocracy During the COVID Pandemic</a>
 </td>
@@ -539,7 +615,7 @@ publication
 
 </tr>
 
-<tr data-index="3" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1776288474199" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40" data-listing-title-sort="Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)" data-listing-filename-sort="2025_Perceptions_of_Inequ.qmd">
+<tr data-index="3" data-categories="Sm91cm5hbCUyMEFydGljbGU=" data-listing-date-sort="1756699200000" data-listing-file-modified-sort="1776262272754" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40" data-listing-title-sort="Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)" data-listing-filename-sort="2025_Perceptions_of_Inequ.qmd">
 <td>
 <a href="./references/publications/posts/2025_Perceptions_of_Inequ.html" class="title listing-title">Perceptions of Inequality and Meritocracy: Their Interplay in Shaping Preferences for Market Justice in Chile (2016–2023)</a>
 </td>
@@ -611,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <div class="btn-container">
-<p><a href="./references/publications/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #212525; margin-top: 0em;">Más publicaciones</a></p>
+<p><a href="./references/publications/index.html" class="btn-action-primary btn-action btn btn-success btn-lg" role="button" style="background-color: #9d3636; margin-top: 0em;">Más publicaciones</a></p>
 </div>
 </section>
 </div>
@@ -660,7 +736,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1775012400000" data-listing-file-modified-sort="1776288474297" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59" data-listing-title-sort="Justification Trajectories for Pension Inequality in Chile (2016-2023): The Role of Social Class and Beliefs in Meritocracy" data-listing-filename-sort="2026_Justification_Trajec.qmd">
+<tr data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1775012400000" data-listing-file-modified-sort="1776780215856" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59" data-listing-title-sort="Justification Trajectories for Pension Inequality in Chile (2016-2023): The Role of Social Class and Beliefs in Meritocracy" data-listing-filename-sort="2026_Justification_Trajec.qmd">
 <td>
 <span class="listing-author">Castillo, Juan Carlos; Canales, Rene; Laffert, Andreas &amp; Urzua, Tomas</span>
 </td>
@@ -670,7 +746,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </tr>
 
-<tr data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1776288474290" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53" data-listing-title-sort="Design of a Conjoint Survey Experiment: Inequality and Deservingness in Higher Education in Chile" data-listing-filename-sort="2026_Design_of_a_Conjoint.qmd">
+<tr data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1776262272995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53" data-listing-title-sort="Design of a Conjoint Survey Experiment: Inequality and Deservingness in Higher Education in Chile" data-listing-filename-sort="2026_Design_of_a_Conjoint.qmd">
 <td>
 <span class="listing-author">Castillo, Juan Carlos; Laffert, Andreas &amp; Canales-Selles, Rene</span>
 </td>
@@ -680,7 +756,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </tr>
 
-<tr data-index="2" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1776288474313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts" data-listing-filename-sort="2026_Stability_and_Compar.qmd">
+<tr data-index="2" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1776262273045" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="Stability and Comparability of Meritocratic Beliefs in School-Age Students: A Measurement Invariance Approach across Time and Cohorts" data-listing-filename-sort="2026_Stability_and_Compar.qmd">
 <td>
 <span class="listing-author">Laffert, Andreas; Castillo, Juan Carlos; Canales-Selles, Rene; Urzua, Tomas &amp; Carrasco, Kevin</span>
 </td>
@@ -690,7 +766,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </tr>
 
-<tr data-index="3" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1776288474299" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="Trayectorias de Justificación de Desigualdad En Chile" data-listing-filename-sort="2026_Trayectorias_de_Just.qmd">
+<tr data-index="3" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1767236400000" data-listing-file-modified-sort="1776262273015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50" data-listing-title-sort="Trayectorias de Justificación de Desigualdad En Chile" data-listing-filename-sort="2026_Trayectorias_de_Just.qmd">
 <td>
 <span class="listing-author">Castillo, Juan Carlos; Canales, Rene; Laffert, Andreas &amp; Urzua, Tomas</span>
 </td>
@@ -716,7 +792,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </div>
 <section id="investigadores" class="level1">
-<h1>Investigadores</h1>
+<h1><span style="color: #8f2b2b;">Investigadores</span></h1>
 <div class="cell">
 <div class="cell-output-display">
 <div class="row team-grid-4">
@@ -821,7 +897,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </style>
 
 <div class="footer-full">
-  <a href="https://github.com/tomasurzuam/web-proyecto" target="_blank">
+  <a href="https://github.com/jus-mer/web-proyecto" target="_blank">
     <i class="fab fa-github"></i>
   </a>
 </div>
@@ -869,13 +945,14 @@ document.addEventListener("DOMContentLoaded", function () {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
