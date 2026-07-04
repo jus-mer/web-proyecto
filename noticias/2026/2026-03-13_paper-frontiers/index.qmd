@@ -8,8 +8,11 @@ draft: false
 image: "featured.png"
 about:
   template: marquee
-  image: "featured.png" 
-title-block-banner: "#212525"   
+  image: "featured.png"
+title-block-banner: "#212525"
+format:
+  html:
+    embed-resources: false
 ---
 
 <!------------------------ Post starts here ------------------------>
@@ -35,3 +38,11 @@ Tres hallazgos centrales:
 Estos resultados sugieren que la capitalización individual tiene efectos culturales profundos: reencuadra las pensiones como logro personal y debilita las demandas redistributivas, incluso entre quienes más se ven perjudicados.
 
 Finalmente, cabe mencionar que este trabajo se inscribe en el proyecto FONDECYT «**Justicia de Mercado y Merecimiento del Bienestar Social**» (2025–2028), y complementa un artículo previo del equipo (también publicado en Frontiers in Sociology) sobre percepciones de desigualdad, meritocracia y preferencias distributivas en salud, educación y pensiones.
+
+<iframe 
+  src="https://jus-mer-pre-piloto-v1.hf.space/" 
+  width="100%" 
+  height="800px" 
+  style="border: none;"
+  allowfullscreen>
+</iframe>
