@@ -1,0 +1,27 @@
+---
+title : "Preferences for Market-Based Welfare: Disentangling the Role of Merit and Privilege Beliefs in Chile"
+date : "2026-01-01"
+author : "Laffert, Andreas; Castillo, Juan Carlos; Canales-Selles, Rene & Urzua, Tomas"
+categories : ["Presentation"]
+publication : " WARN Online Workshop: Methods in Welfare Attitudes Research "
+publication_short : " WARN Online Workshop: Methods in Welfare Attitudes Research "
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+<iframe
+src="https://jus-mer.github.io/multidimensional-meritocracy-mjp/presentations/WARN/warn-workshop.html#/preferences-for-market-based-welfare-disentangling-the-role-of-merit-and-privilege-beliefs-in-chile"
+title="Xaringan presentation"
+style="width: 100%; max-width: 100%; height: 450px; border: 0;"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Laffert, Andreas; Castillo, Juan Carlos; Canales-Selles, Rene & Urzua, Tomas (2026). *Preferences for Market-Based Welfare: Disentangling the Role of Merit and Privilege Beliefs in Chile*.  WARN Online Workshop: Methods in Welfare Attitudes Research 
+
+:::
+

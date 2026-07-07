@@ -1,0 +1,27 @@
+---
+title : "Cambios En Las Creencias Sobre Meritocracia y Justicia de Mercado En El Contexto Escolar Chileno"
+date : "2025-01-01"
+author : "Castillo, Juan Carlos; Carrasco, Kevin; Laffert, Andreas & Nunez, Maria Fernanda"
+categories : ["Presentation"]
+publication : " VIII Seminario Internacional Desigualdad y Movilidad Social En América Latina "
+publication_short : " VIII Seminario Internacional Desigualdad y Movilidad Social En América Latina "
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+<iframe
+src="https://educacion-meritocracia.github.io/market-justice-panel-edumer/conferencias/demosal-2025/changes-meritocracy.html#/cambios-en-las-creencias-sobre-meritocracia-y-justicia-de-mercado-en-el-contexto-escolar-chileno"
+title="quarto presentation"
+style="width: 100%; max-width: 100%; height: 450px; border: 0;"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, Juan Carlos; Carrasco, Kevin; Laffert, Andreas & Nunez, Maria Fernanda (2025). *Cambios En Las Creencias Sobre Meritocracia y Justicia de Mercado En El Contexto Escolar Chileno*.  VIII Seminario Internacional Desigualdad y Movilidad Social En América Latina 
+
+:::
+

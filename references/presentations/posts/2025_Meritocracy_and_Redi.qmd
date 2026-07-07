@@ -1,0 +1,27 @@
+---
+title : "Meritocracy and Redistributive Preferences at School Level in Chile"
+date : "2025-01-01"
+author : "Castillo, Juan Carlos; Carrasco, Kevin & Laffert, Andreas"
+categories : ["Presentation"]
+publication : " 5th ISA Forum of Sociology "
+publication_short : " 5th ISA Forum of Sociology "
+abstract : "(Abstract not available)"
+abstract_short : ""
+about:
+  template: marquee
+---
+<iframe
+src="https://educacion-meritocracia.github.io/market-justice-panel-edumer/conferencias/isa-2025/isa-2025.html#/meritocracy-and-redistributive-preferences-at-school-level-in-chile"
+title="quarto presentation"
+style="width: 100%; max-width: 100%; height: 450px; border: 0;"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+
+::: {.callout-note title="How to cite this work"}
+
+Castillo, Juan Carlos; Carrasco, Kevin & Laffert, Andreas (2025). *Meritocracy and Redistributive Preferences at School Level in Chile*.  5th ISA Forum of Sociology 
+
+:::
+
