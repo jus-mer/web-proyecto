@@ -1,6 +1,6 @@
 ---
 title: "<span style='text-align:center;'> Page not found </span>"
-title-block-banner: "#B8573E"
+title-block-banner: "#9B2626"
 include-after-body: _footer.html
 ---
 
