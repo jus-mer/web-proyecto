@@ -231,29 +231,47 @@ create_team_card(
   text = "Investigador Principal"
 ),
 create_team_card(
+  person_page = "https://www.linkedin.com/in/tom%C3%A1s-urz%C3%BAa-moreno-b65755375/",
+  img_src = "images/people/tomas-2.png",
+  name = "Tomás Urzúa",
+  text = "Asistente de investigación"
+),
+create_team_card(
   
   person_page = "https://andreas-lafferte.github.io/alaffert-website/",
   img_src = "images/people/andreas.jpg",
   name = "Andreas Laffert",
-  text = "Asistente de investigación"
-),
-create_team_card(
-  person_page = "https://www.linkedin.com/in/tom%C3%A1s-urz%C3%BAa-moreno-b65755375/",
-  img_src = "images/people/tomas.jpg",
-  name = "Tomás Urzúa",
-  text = "Asistente de investigación"
+  text = "Investigador asociado"
 ),
 create_team_card(
   person_page = "https://renejcanales.github.io/renecanales-website/",
   img_src = "images/people/rene.jpg",
   name = "René Canales",
-  text = "Asistente de investigación"
+  text = "Investigador asociado"
 ),
 create_team_card(
   person_page = "https://www.bigsss-bremen.de/people/phd-fellows/julio-iturra-sanhueza",
   img_src = "images/people/julio-2.png",
   name = "Julio Iturra",
-  text = "Investigador visitante"
+  text = "Investigador asociado"
+),
+create_team_card(
+  person_page = "https://www.linkedin.com/in/victoria-arias-ortega/",
+  img_src = "images/people/victoria-2.png",
+  name = "Victoria Arias",
+  text = "Tesista"
+),
+create_team_card(
+  person_page = "https://www.linkedin.com/in/cristobal-mejias-g/",
+  img_src = "images/people/cristobal.png",
+  name = "Cristóbal Mejías",
+  text = "Tesista"
+),
+create_team_card(
+  person_page = "https://github.com/ismaelaguayob",
+  img_src = "images/people/ismael.png",
+  name = "Ismael Aguayo",
+  text = "Tesista"
 )
 )
 ```

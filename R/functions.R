@@ -71,7 +71,7 @@ create_team_card <- function(person_page, img_src, name, alt, text, url_web, url
     tags$div(
       class = "team-card",
       a(href = person_page,
-      tags$img(class ="team-image", src = img_src, alt = name, style = "width:100%")),
+      tags$img(class ="team-image", src = img_src, alt = name)),
       tags$div(
         class = "container",
         a(href = person_page,
