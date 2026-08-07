@@ -40,7 +40,9 @@ listing:
   type: table
   grid-columns: 2
   image-height: 300px
-  fields: [author,title]
+  fields: [author,title,publication]
+  field-display-names:
+    publication: "Event"
   max-items: 4
   categories: false
 ---
@@ -189,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-:::{.column-screen style="background-color:#9B2626;"}
+:::{.column-screen style="background-color: #9B2626;"}
 :::{.column-screen-inset}
 
 :::{#presentationsh1}
@@ -202,6 +204,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ::: {#presentations}
 :::
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const rows = document.querySelectorAll("#listing-presentations .quarto-listing-table tbody tr");
+  rows.forEach((row) => {
+    const titleCell = row.querySelector("td:nth-child(2)");
+    const titleLink = titleCell && titleCell.querySelector("a");
+    const publicationCell = row.querySelector("td:nth-child(3)");
+    const dateSort = row.getAttribute("data-listing-date-sort");
+    if (titleLink && publicationCell) {
+      const conference = publicationCell.textContent.trim();
+      if (conference) {
+        const confSpan = document.createElement("span");
+        confSpan.className = "presentation-conference";
+        confSpan.textContent = conference;
+        titleCell.appendChild(document.createElement("br"));
+        titleCell.appendChild(confSpan);
+      }
+      if (dateSort) {
+        const d = new Date(Number(dateSort));
+        if (!isNaN(d)) {
+          const dateSpan = document.createElement("span");
+          dateSpan.className = "presentation-date";
+          const raw = d.toLocaleDateString("es-CL", { month: "long", year: "numeric", timeZone: "UTC" });
+          dateSpan.textContent = raw.charAt(0).toUpperCase() + raw.slice(1);
+          titleCell.appendChild(dateSpan);
+        }
+      }
+      publicationCell.style.display = "none";
+    }
+  });
+  const thCells = document.querySelectorAll("#listing-presentations .quarto-listing-table thead th");
+  thCells.forEach((th) => {
+    if (th.textContent.trim() === "Event") th.style.display = "none";
+  });
+});
+</script>
 
 ::: {.btn-container}
 [Más presentaciones](references/presentations/index.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="background-color: #212525; margin-top: 0em;"}
