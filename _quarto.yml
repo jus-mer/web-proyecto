@@ -34,9 +34,11 @@ website:
       - href: index.qmd#publicationsh1
         text: "Publicaciones"
       - href: index.qmd#presentationsh1
-        text: "Presentaciones"        
+        text: "Presentaciones"       
+      - href: index.qmd#datosh1
+        text: "Datos"   
       - href: index.qmd#equipoh1
-        text: "Investigadores"
+        text: "Equipo"
         menu:
         - href: research/citations/index.qmd
           text: "All citations"

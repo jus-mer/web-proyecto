@@ -1,0 +1,16 @@
+# Bloques de la sección "Datos" del home (index.qmd).
+# Edita aquí título, descripción, imagen y link (path) de cada bloque.
+- title: "Encuesta Panel JUSMER"
+  description: "Encuesta de panel de 3 olas a población adulta sobre justicia de mercado y merecimiento del bienestar social"
+  image: images/jusmer_trans.png
+  path: https://jus-mer.github.io/survey-jusmer/documentation/docs/index.html
+
+- title: "Encuesta EDUMERCO"
+  description: "Encuesta transversal a población adulta sobre meritocracia, desigualdad y cohesión social"
+  image: images/edumerco.png
+  path: https://educacion-meritocracia.github.io/encuesta-edumerco/documentacion/docs/index.html
+
+- title: "Encuesta EDUMER"
+  description: "Encuesta panel de 2 olas a población escolar de Santiago y Valparaíso sobre educacióny  meritocracia"
+  image: images/edumer.png
+  path: https://educacion-meritocracia.github.io/encuesta-edumer/

@@ -45,6 +45,14 @@ listing:
     publication: "Event"
   max-items: 4
   categories: false
+
+- id: datos
+  contents: "datos.yml"
+  type: grid
+  grid-columns: 3
+  image-height: 200px
+  fields: [image, title, description]
+  categories: false
 ---
 
 ```{r}
@@ -251,13 +259,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+:::{.column-screen style="background-color:#f4eeee;"}
+:::{.column-screen-inset}
+
+:::{#datosh1}
+:::
+
+
+# <span style="color: #8f2b2b;">Datos</span>
+
+::: {#datos}
+:::
+
+:::
+:::
+
+
+
 :::{.column-screen style="background-color:#fff;"}
 :::{.column-screen-inset}
 
 :::{#equipoh1}
 :::
 
-# <span style="color: #8f2b2b;">Investigadores</span>
+# <span style="color: #8f2b2b;">Equipo central</span>
 
 ```{r}
 #| echo: false
@@ -274,7 +299,43 @@ create_team_card(
   img_src = "images/people/tomas-2.png",
   name = "Tomás Urzúa",
   text = "Asistente de investigación"
+)
+)
+```
+
+# <span style="color: #8f2b2b;">Tesistas</span>
+
+```{r}
+#| echo: false
+tags$div(class = "row team-grid-4",
+
+create_team_card(
+  person_page = "https://www.linkedin.com/in/victoria-arias-ortega/",
+  img_src = "images/people/victoria-2.png",
+  name = "Victoria Arias",
+  text = "Tesista"
 ),
+create_team_card(
+  person_page = "https://www.linkedin.com/in/cristobal-mejias-g/",
+  img_src = "images/people/cristobal.png",
+  name = "Cristóbal Mejías",
+  text = "Tesista"
+),
+create_team_card(
+  person_page = "https://github.com/ismaelaguayob",
+  img_src = "images/people/ismael.png",
+  name = "Ismael Aguayo",
+  text = "Tesista"
+)
+)
+```
+
+# <span style="color: #8f2b2b;">Colaboradores</span>
+
+```{r}
+#| echo: false
+tags$div(class = "row team-grid-4",
+
 create_team_card(
   
   person_page = "https://andreas-lafferte.github.io/alaffert-website/",
@@ -293,24 +354,6 @@ create_team_card(
   img_src = "images/people/julio-2.png",
   name = "Julio Iturra",
   text = "Investigador asociado"
-),
-create_team_card(
-  person_page = "https://www.linkedin.com/in/victoria-arias-ortega/",
-  img_src = "images/people/victoria-2.png",
-  name = "Victoria Arias",
-  text = "Tesista"
-),
-create_team_card(
-  person_page = "https://www.linkedin.com/in/cristobal-mejias-g/",
-  img_src = "images/people/cristobal.png",
-  name = "Cristóbal Mejías",
-  text = "Tesista"
-),
-create_team_card(
-  person_page = "https://github.com/ismaelaguayob",
-  img_src = "images/people/ismael.png",
-  name = "Ismael Aguayo",
-  text = "Tesista"
 )
 )
 ```

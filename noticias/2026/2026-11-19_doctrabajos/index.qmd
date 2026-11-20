@@ -1,0 +1,30 @@
+---
+title: "Presentación en el Workshop Online WARN 2026"
+categories: [noticias]
+# Date published
+date: "2026-11-20"
+draft: false
+image: "featured.png"
+about:
+  template: marquee
+  image: "featured.png" 
+title-block-banner: "#212525"   
+bibliography: "../../../input/bib/jusmer.bib"
+csl: "../../../input/bib/apa6.csl"
+toc: false
+
+---
+
+## Ayudantes de JUSMER finalizan documentos de trabajo 💻📚
+
+El proyecto JUSMER se aloja físicamente en la Facultad de Ciencias Sociales de la Universidad de Chile. En este contexto, desde la Dirección de Investigación levantaron una iniciativa llamada "Incorporación Temprana a Proyectos de Investigación (ITEP)", la cual tenía el objetivo de que estudiantes de pregrado se integraran a proyectos de investigación para adquirir experiencia en el ámbito investigativo. A partir de esta instancia, durante el segundo semestre del 2026 el equipo JUSMER sumó a dos integrantes en calidad de ayudantes: Javiera Álvarez y Nicolás Outerbridge.
+
+La labor de ambos ayudantes se dividió en dos etapas principales: En la primera se dedicaron a la documentación de encuestas, donde Javiera se encargó de documentar la encuesta [EDUMERCO](https://educacion-meritocracia.github.io/encuesta-edumerco/documentacion/docs/index.html), mientras que Nicolás se dedicó a la documentación metodológica de la encuesta [EDUMER](https://educacion-meritocracia.github.io/encuesta-edumer/). Ya en la segunda etapa, cada ayudante se encargó de desarrollar un documento de trabajo utilizando los datos de las encuestas que ya habían registrado. 
+
+En los documentos de trabajo, los ayudantes se encargaron de desarrollar diversos análisis de datos enfocados en la elaboración de un producto final que profundizara en alguna batería de preguntas en particular.
+
+Javiera trabajó con la batería de Valores Sociales de Schwartz: [Documento de trabajo aquí](https://javieraalvarez0208-hue.github.io/edumerco-PVQ21-factorial/#an%C3%A1lisis-factorial-confirmatorio)
+
+Nicolás analizó datos de un experimento distribucional de encuesta: [Documento de trabajo aquí](https://x0czz.github.io/EDUMER-DSE/)
+
+Estos documentos de trabajo constituyen el hito final de ambos estudiantes como ayudantes en el proyecto JUSMER. ¡Esperamos que esta oportunidad haya sido una experiencia fructífera para el desarrollo de su trayectoria académica y profesional!
