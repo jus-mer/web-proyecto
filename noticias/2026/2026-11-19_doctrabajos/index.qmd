@@ -1,5 +1,5 @@
 ---
-title: "Presentación en el Workshop Online WARN 2026"
+title: "Ayudantes ITEP terminan documentos de trabajo"
 categories: [noticias]
 # Date published
 date: "2026-11-20"

@@ -1,0 +1,23 @@
+---
+title : "Social Hierarchies and Meritocracy: Objective Status and the Moderating Role of Subjective Social Status on Perceived Meritocracy"
+date : "2026-04-01"
+author : "Iturra-Sanhueza, Julio; Castillo, Juan Carlos & Garcia-Castro, Juan Diego"
+categories : ["Journal Article"]
+publication : "Frontiers in Sociology, 11: Frontiers [https://doi.org/10.3389/fsoc.2026.1750965](https://doi.org/10.3389/fsoc.2026.1750965)"
+publication_short : "Frontiers in Sociology, 11: Frontiers [https://doi.org/10.3389/fsoc.2026.1750965](https://doi.org/10.3389/fsoc.2026.1750965)"
+abstract : "This study investigates how subjective and objective dimensions of social status affect perceptions of meritocracy in Chile's highly unequal society. Using data from the 2018 wave of the Longitudinal Social Study of Chile (ELSOC; N = 3,488), it examines whether individuals’ beliefs about social status correlate with perceptions that effort and talent are rewarded, even when controlling for income and education. Grounded in the Reference Group and Reality (R&R) blend hypothesis (Evans 2004; Evans et al. 1992), the analysis shows that subjective status is positively associated with perceived meritocracy. However, the evidence for objective status is more complex. While income often correlates with heightened perceptions of meritocracy—suggesting that individuals attribute their success to effort and talent (the self-interest hypothesis)—the results indicate a weak, statistically non-significant relationship when considering household income deciles. Alternative measures reflect modest differences in the expected direction. In terms of education, although it can reinforce meritocratic ideals (socialization hypothesis), it can also foster critical views by increasing awareness of structural inequalities (instruction hypothesis). Our findings support the latter, revealing that higher education levels are linked to lower perceptions of meritocracy. Moreover, subjective status moderates the relationship between objective status and perceived meritocracy. Individuals with higher income or educational attainment perceive greater meritocracy only when they identify as having higher status. Conversely, those in advantageous positions with low subjective status express lower perceived meritocracy. These findings highlight the significance of social comparison and self-perception in legitimizing or contesting meritocratic perceptions, particularly among upper-status groups. The study contributes to the literature on social stratification and attitudes towards inequality by discussing the assumptions of rational self-interest and emphasizing the psychosocial mechanisms underlying status perception. It expands the research scope beyond Western contexts by examining these dynamics in Chile, showing that subjective social status is crucial for understanding perceptions of meritocracy. Limitations and future research directions, especially regarding social networks and status misperception, are also discussed."
+abstract_short : ""
+about:
+  template: marquee
+  links:
+    - icon: NA
+      href: NA
+---
+
+
+::: {.callout-note title="How to cite this work"}
+
+Iturra-Sanhueza, Julio; Castillo, Juan Carlos & Garcia-Castro, Juan Diego (2026). *Social Hierarchies and Meritocracy: Objective Status and the Moderating Role of Subjective Social Status on Perceived Meritocracy*. Frontiers in Sociology, 11: Frontiers [https://doi.org/10.3389/fsoc.2026.1750965](https://doi.org/10.3389/fsoc.2026.1750965)
+
+:::
+

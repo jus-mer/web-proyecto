@@ -1,0 +1,25 @@
+---
+title: "Reunión académica con el proyecto europeo EDUMERIT"
+categories: [noticias]
+# Date published
+date: "2026-10-15"
+draft: false
+image: "featured.png"
+about:
+  template: marquee
+  image: "featured.png" 
+title-block-banner: "#212525"   
+bibliography: "../../../input/bib/jusmer.bib"
+csl: "../../../input/bib/apa6.csl"
+toc: false
+
+---
+
+## Equipo JUSMER tiene una reunión con integrantes del proyecto EDUMERIT de Estonia 💻
+
+EDUMERIT es un proyecto de investigación alojado en la Universidad de Tallin (Estonia), cuyo objetivo es explicar por qué los sistemas educativos pueden parecer justos aunque no garanticen la igualdad de oportunidades. Para ello estudia cómo la aplicación concreta de las políticas de elección de escuela influye en lo que piensan los padres sobre la justicia educativa, la meritocracia y la movilidad social, y cómo esas percepciones afectan su confianza en el Estado y su postura frente a la política educativa. El proyecto es liderado por la profesora Triin Lauri (Universidad de Tallin), quien estuvo presente en la reunión junto con otros miembros del equipo, tales como Kaire Poder, Katrin Tiidenberg y Franco Bastías, entre otros. Para más información del proyecto y del equipo, haga click [aquí](https://triin-lauri-koduleht.voog.com/edumerit).
+
+Debido a la estrechez temática que comparte EDUMERIT y JUSMER, ambos equipos coordinaron una reunión online durante las primeras semanas de septiembre, en donde se compartieron los principales objetivos de investigación de cada proyecto, para luego presentar sus respectivos estudios en desarrollo. Esta instancia constituyó un espacio de intercambio académico de alto nivel, el cual cerró con ideas para futuras colaboraciones. Desde el equipo JUSMER consideramos fundamentales estas oportunidades que proliferan la vinculación de la academia local con la internacional.
+
+Para acceder a la presentación hecha por JUSMER, haga click [aquí](https://jus-mer.github.io/project-presentations/irc-presentation/irc-presentation.html#/).
+
