@@ -344,13 +344,13 @@ tags$div(class = "row team-grid-4",
 
 create_team_card(
   person_page = "",
-  img_src = "https://res.cloudinary.com/sitegurus/image/upload/v1624100887/profile_pictures/default_qrqg0b.png",
+  img_src = "images/people/javiera.jpg",
   name = "Javiera Álvarez",
   text = "Ayudante"
 ),
 create_team_card(
   person_page = "",
-  img_src = "https://res.cloudinary.com/sitegurus/image/upload/v1624100887/profile_pictures/default_qrqg0b.png",
+  img_src = "images/people/nicolas.png",
   name = "Nicolás Outerbridge",
   text = "Ayudante"
 )
